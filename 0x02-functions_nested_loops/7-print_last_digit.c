@@ -27,4 +27,3 @@ return (last_digit);
 }
 
 }
-2

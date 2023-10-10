@@ -2,6 +2,9 @@
 
 int _putchar(char c);
 
+// Rest of your code
+
+
 /**
  * print_times_table - print the times table until n
  *
@@ -10,7 +13,8 @@ int _putchar(char c);
  * Return: No return
  */
 
-void print_times_table(int n)
+
+void print_times_table(int n);  // Function prototype
 {
 	int i;
 	int j;

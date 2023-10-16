@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
  *_strcpy - copy stringat the end of another string including \0.
  *@dest: pointer to string to be copied to.

@@ -82,39 +82,3 @@ void print_char(va_list *arg)
 {
 	printf("%c", va_arg(*arg, int));
 }
-
-/**
- * print_int - prints an int
- * @arg: pointer to int
- */
-
-void print_int(va_list *arg)
-{
-	printf("%d", va_arg(*arg, int));
-}
-
-/**
- * print_float - prints a float data type
- * @arg: pointer to float
- */
-
-void print_float(va_list *arg)
-{
-	printf("%f", va_arg(*arg, double));
-}
-
-/**
- * print_string - prints a string
- * @arg: pointer to string
- */
-
-void print_string(va_list *arg)
-{
-	char *str[2];
-	int i;
-
-	str[0] = va_arg(*arg, char *);
-	str[1] = "(nil)";
-	i = str[0] == NULL;
-	printf("%s", str[i]);
-}

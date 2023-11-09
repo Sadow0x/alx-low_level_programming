@@ -47,38 +47,3 @@ void print_all(const char * const format, ...)
 	va_end(args);
 	printf("\n");
 }
-
-/**
- * get_func - gets corresponding function of format type
- * @fmt_arr: format types array
- * @identifier: format type
- * Return: pointer to function (SUCCESS) or
- * NULL (FAILURE)
- */
-
-void (*get_func(char identifier, struct format_struct *fmt_arr))(va_list *)
-{
-	int i = 0;
-
-	while (fmt_arr[i].format)
-	{
-		if (fmt_arr[i].format == identifier)
-		{
-			return (fmt_arr[i].fmt_print_func);
-		}
-
-		i++;
-	}
-
-	return (fmt_arr[i].fmt_print_func);
-}
-
-/**
- * print_char - prints a char
- * @arg: pointer to a char
- */
-
-void print_char(va_list *arg)
-{
-	printf("%c", va_arg(*arg, int));
-}
